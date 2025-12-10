@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services - Proteus Bioscience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#283d50",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#111827",
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased overflow-y-scroll">
+    <div class="min-h-screen flex flex-col">
+        <header
+            class="w-full py-6 px-4 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <a class="flex items-center space-x-4" href="./index.html">
+                        <img src="../src/proteusIcon.png" alt="proteusLogo" class="w-16 h-16" />
+                        <div class="flex flex-col">
+                            <span
+                                class="text-xl font-bold tracking-wider text-primary dark:text-slate-100">PROTEUS</span>
+                            <span
+                                class="text-sm font-medium tracking-widest text-slate-600 dark:text-slate-400">BIOSCIENCE</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center justify-center flex-1">
+                    <ul class="flex space-x-10">
+                        <li><a class="text-base font-medium text-primary hover:text-opacity-80 transition-colors"
+                                href="./index.html">Home</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                                href="./aboutus.html">About Us</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Services</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-gray-800 dark:text-gray-200">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl font-bold text-primary dark:text-white">Our Services</h1>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+                        Empowering scientific discovery and innovation through expert consulting and advisory services.
+                        We partner with you to navigate the complexities of bioscience.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    <div
+                        class="bg-white dark:bg-slate-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                        <div class="p-8">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                                    <span class="material-icons text-blue-500 dark:text-blue-400">groups</span>
+                                </div>
+                                <h2 class="text-3xl font-bold text-primary dark:text-slate-100">Consultoria</h2>
+                            </div>
+                            <p class="mt-4 text-slate-600 dark:text-slate-400">
+                                Our strategic consulting services provide in-depth analysis and actionable insights to
+                                guide your research and development efforts. We help you overcome challenges, optimize
+                                processes, and achieve your scientific milestones efficiently.
+                            </p>
+                            <a class="mt-6 inline-flex items-center font-semibold text-primary dark:text-blue-400 hover:underline"
+                                href="#">
+                                Learn More
+                                <span class="material-icons ml-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                        <div class="p-8">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-teal-100 dark:bg-teal-900/50 flex items-center justify-center">
+                                    <span class="material-icons text-teal-500 dark:text-teal-400">lightbulb</span>
+                                </div>
+                                <h2 class="text-3xl font-bold text-primary dark:text-slate-100">Assessoria</h2>
+                            </div>
+                            <p class="mt-4 text-slate-600 dark:text-slate-400">
+                                With our expert advisory services, we offer continuous support and guidance for your
+                                projects. From experimental design to data interpretation and regulatory compliance, our
+                                team is your trusted partner in advancing bioscience.
+                            </p>
+                            <a class="mt-6 inline-flex items-center font-semibold text-primary dark:text-teal-400 hover:underline"
+                                href="#">
+                                Learn More
+                                <span class="material-icons ml-1">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-sm text-slate-500 dark:text-slate-400">© 2024 Proteus Bioscience. All rights
+                        reserved.</p>
+                    <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                        <a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors"
+                            href="#">Privacy Policy</a>
+                        <a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors"
+                            href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+
