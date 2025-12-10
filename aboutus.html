@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Proteus Bioscience - Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#283d50",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#111827",
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display overflow-y-scroll">
+  <div class="flex flex-col min-h-screen">
+    <header
+      class="w-full py-6 px-4 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <a class="flex items-center space-x-4" href="./index.html">
+            <img src="../src/proteusIcon.png" alt="proteusLogo" class="w-16 h-16" />
+            <div class="flex flex-col">
+              <span class="text-xl font-bold tracking-wider text-primary dark:text-slate-100">PROTEUS</span>
+              <span class="text-sm font-medium tracking-widest text-slate-600 dark:text-slate-400">BIOSCIENCE</span>
+            </div>
+          </a>
+        </div>
+        <nav class="hidden md:flex items-center justify-center flex-1">
+          <ul class="flex space-x-10">
+            <li><a class="text-base font-medium text-primary hover:text-opacity-80 transition-colors"
+                href="./index.html">Home</a></li>
+            <li><a
+                class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                href="#">About Us</a></li>
+            <li><a
+                class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                href="./services.html">Services</a></li>
+            <li><a
+                class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="md:hidden">
+          <button class="text-gray-800 dark:text-gray-200">
+            <span class="material-icons">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold text-logo-dark-blue dark:text-white mb-4">
+            Meet Our Team
+          </h1>
+          <p class="max-w-3xl mx-auto text-lg text-subtext-light dark:text-subtext-dark">
+            We are a dedicated team of scientists, researchers, and innovators
+            passionate about pushing the boundaries of bioscience to create a
+            better future.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+            <img alt="Portrait of Dr. Evelyn Reed" class="w-full h-72 object-cover object-center"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuozKLutfHv02u_NSBGWfWyILukQ3GQBM2C9vzsVG4XvvBOdoRMYrQCGfKS-Luwf9Bk6uKN72kGCF28tOBlygjiQEmNuDApO7XxjjIRxY1evbNulktDd1_sdGgkZK42BBzsaCVFm2zuNK4NN6Ytq_U5zQz1k65KLZ2SqL5zLNVzGnI3sJTStDyLSktLisXshdTvDpLWS8jbufBg3P3DjLaypQaZo3neiARpehugaWb8crYP7Y6bU2Ck-jc9Fb4iiHrW3vfkm68Xz2k" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-logo-dark-blue dark:text-white">
+                Dr. Evelyn Reed
+              </h3>
+              <p class="text-primary font-semibold text-md mt-1">
+                Founder &amp; Chief Scientist
+              </p>
+              <p class="text-subtext-light dark:text-subtext-dark mt-4">
+                With over 20 years in genetic research, Dr. Reed leads our
+                scientific vision, pioneering new methods in cellular
+                engineering.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+            <img alt="Portrait of Dr. Ben Carter" class="w-full h-72 object-cover object-center"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnwExAX_rrNkaXUBWDd1VUXGS5KlLOohA_Q_Xkfb8pv7Zb2LXRXi-dnVzrkJYsvpAYkZif9Srsya-3JMpgvYpUJao-EvoLIKbwHOBRHh2dCHjV3Rn2JRIcf0Vm1NW2Fkrrsk0LxUvGFYiVrnvM0T8fTWeKkvTF-kTiVp4XDfvQe2Ric7PEUQAeA3ylFFOgXb1QUiRaWkKbshHVrM1M9hfnuNiE8kI7VCSwAqDNpTbr2-dtyDvuKPUa56_eFLtyVb9HF-lCTDCcDcJw" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-logo-dark-blue dark:text-white">
+                Dr. Ben Carter
+              </h3>
+              <p class="text-primary font-semibold text-md mt-1">
+                Head of Research &amp; Development
+              </p>
+              <p class="text-subtext-light dark:text-subtext-dark mt-4">
+                Dr. Carter is an expert in molecular biology. He drives our
+                R&amp;D, turning groundbreaking ideas into tangible solutions.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+            <img alt="Portrait of Maria Sanchez" class="w-full h-72 object-cover object-center"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpty7ZtbGM2aKgNdDllfWyzUq3XbG5nfIUzldZbGgMo0gjSCdgqwUWRDyNuxKKSughUBnPG1U4wZ85QaZkh_GyQ-0tXg75uG-UUj46Hji5rO_iGrX797cmzN6_c2g2VEqNqIY25RlAHziQ-oKUqFDZfUqJkm9Yl5nBr3ZgtQ-mPVzgS3j5JsiE6ZmP2GaxUbGl6uHBTEBprggYNSCnj2LZLkhpfV9VM4pu2rL0VHd1BGYa1RhW1y9bYACUx3X6uKa88rjdP-Wjg42W" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-logo-dark-blue dark:text-white">
+                Maria Sanchez
+              </h3>
+              <p class="text-primary font-semibold text-md mt-1">
+                Lead Bioinformatician
+              </p>
+              <p class="text-subtext-light dark:text-subtext-dark mt-4">
+                Maria specializes in computational biology, analyzing complex
+                data to unlock insights that accelerate our research.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+            <img alt="Portrait of David Chen" class="w-full h-72 object-cover object-center"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC57o6CpwBTNv8p7bYCntByCaQOvjS0H8yMkoj5d1V9zHAry8RngumdmHi477XPo-015XUUxHpw9N0mm23if5UxjUCz9e9wehhG_DLrceeH69qC-f0z7IGyfwdETgweZP6kscEhB82VeT22_Si6PXpSP_D7EfY8s4U-I8_q8gtASt9pVVDPhr4Ub3hmFVy_rGNLjnoVV4IIdasCH58ptHvri8EDzB8Kk0AAYddTwFRBajFm8AsQtV0ayiCN_XT_Un0N8Gh8j8PpCC9Y" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-logo-dark-blue dark:text-white">
+                David Chen
+              </h3>
+              <p class="text-primary font-semibold text-md mt-1">
+                Chief Operations Officer
+              </p>
+              <p class="text-subtext-light dark:text-subtext-dark mt-4">
+                David ensures our labs run efficiently and safely, overseeing
+                all operational aspects to support our scientific endeavors.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+            <img alt="Portrait of Dr. Aisha Khan" class="w-full h-72 object-cover object-center"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2m792Z802WhxCc2hg9qHKSrKyaD9LatVWJIHBT4iQGpZpZdm5PLTYyIRk0pGp7IN9MjQ7w9eRVEwFt31nVq1N5e8l4Kbst8Jm5PaBjKuC1ySsCY2WkGAjM2iEm9ZLgtd7Dsu4nDqQyj2rXfU_V95DgWN2JmU6YzykR9wB7gYqwBSPn0PW3YQaPWgubhajvgbFDP93ndrwyfSm7Kmeduip4mUA8mankZDCeLcUiwuzHG7TjsrcxM3Ft4M_tJE8wnw172TOLaqKm_tO" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-logo-dark-blue dark:text-white">
+                Dr. Aisha Khan
+              </h3>
+              <p class="text-primary font-semibold text-md mt-1">
+                Senior Microbiologist
+              </p>
+              <p class="text-subtext-light dark:text-subtext-dark mt-4">
+                Dr. Khan's work in microbial genetics is critical to developing
+                our next generation of biotechnology products.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+            <img alt="Portrait of Leo Martinez" class="w-full h-72 object-cover object-center"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBur6AQZTqNE_0LQXcIVlTrryC8c6aWcmfOwmZErDnHiMid2NA8V4s3gAdPlm4KCTA8kJocx-85vEJkfYCM_rUk_NV5bwNx7eAMdGeZr32yB-kNP57smVNZOj-5DXxnYnS4xPxuF3saTYJ5u1prGzCbvMC-nd0XGO_tPClxtzmUqBz-ecdWGySQilvQDX3tJ12TIVsG2XtMOZDZZ_uLKDg9gcl1QGwlmfVruWTb8LynDd1UWSM5xKSxGEuRNhH3Nl7zu0bsc78PEnx" />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-logo-dark-blue dark:text-white">
+                Leo Martinez
+              </h3>
+              <p class="text-primary font-semibold text-md mt-1">Lab Manager</p>
+              <p class="text-subtext-light dark:text-subtext-dark mt-4">
+                Leo manages the day-to-day activities of our research
+                facilities, maintaining the highest standards of quality and
+                precision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <p class="text-sm text-slate-500 dark:text-slate-400">© 2024 Proteus Bioscience. All rights
+                reserved.</p>
+            <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                <a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors"
+                    href="#">Privacy Policy</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors"
+                    href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+  </div>
+</body>
+
+</html>
+
