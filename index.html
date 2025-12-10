@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Proteus Bioscience - Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#283d50",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#111827",
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display overflow-y-scroll">
+    <div class="flex flex-col min-h-screen">
+        <header
+            class="w-full py-6 px-4 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <a class="flex items-center space-x-4" href="#">
+                        <img src="../src/proteusIcon.png" alt="proteusLogo" class="w-16 h-16" />
+                        <div class="flex flex-col">
+                            <span
+                                class="text-xl font-bold tracking-wider text-primary dark:text-slate-100">PROTEUS</span>
+                            <span
+                                class="text-sm font-medium tracking-widest text-slate-600 dark:text-slate-400">BIOSCIENCE</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center justify-center flex-1">
+                    <ul class="flex space-x-10">
+                        <li><a class="text-base font-medium text-primary hover:text-opacity-80 transition-colors"
+                                href="#">Home</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                                href="./aboutus.html">About Us</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                                href="./services.html">Services</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-gray-800 dark:text-gray-200">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+                <div class="text-center">
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-primary">Pioneering the Future of
+                        Biological Science</h2>
+                    <p class="mt-6 max-w-3xl mx-auto text-lg sm:text-xl text-gray-600 dark:text-gray-300">
+                        At Proteus Bioscience, we are dedicated to advancing human health through innovative research,
+                        cutting-edge technology, and a deep commitment to scientific discovery. Our work transforms
+                        complex biological challenges into life-changing solutions.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a class="w-full sm:w-auto inline-block bg-primary text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-opacity-90 transition-all transform hover:scale-105"
+                            href="#">
+                            Our Services
+                        </a>
+                        <a class="w-full sm:w-auto inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 font-semibold py-3 px-8 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all"
+                            href="#">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
