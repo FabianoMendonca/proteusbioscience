@@ -38,6 +38,7 @@
 
 <body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased overflow-y-scroll">
     <div class="min-h-screen flex flex-col">
+    <div id="header-placeholder" style="min-height: 110px;">
         <header
             class="w-full py-6 px-4 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
             <div class="max-w-7xl mx-auto flex justify-between items-center">
@@ -45,32 +46,30 @@
                     <a class="flex items-center space-x-4" href="./index.html">
                         <img src="./src/proteusIcon.png" alt="proteusLogo" class="w-16 h-16" />
                         <div class="flex flex-col">
-                            <span
-                                class="text-xl font-bold tracking-wider text-primary dark:text-slate-100">PROTEUS</span>
-                            <span
-                                class="text-sm font-medium tracking-widest text-slate-600 dark:text-slate-400">BIOSCIENCE</span>
+                            <span class="text-xl font-bold tracking-wider text-primary dark:text-slate-100">PROTEUS</span>
+                            <span class="text-sm font-medium tracking-widest text-slate-600 dark:text-slate-400">BIOSCIENCE</span>
                         </div>
                     </a>
                 </div>
+
                 <nav class="hidden md:flex items-center justify-center flex-1">
                     <ul class="flex space-x-10">
-                        <li><a class="text-base font-medium text-primary hover:text-opacity-80 transition-colors"
-                                href="./index.html">Home</a></li>
-                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
-                                href="./aboutus.html">About Us</a></li>
-                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
-                                href="./services.html">Services</a></li>
-                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
-                                href="./contact.html">Contact</a></li>
+                        <li><a class="text-base font-medium text-primary" href="./index.html">Home</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300" href="./aboutus.html">About Us</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300" href="./services.html">Services</a></li>
+                        <li><a class="text-base font-medium text-gray-600 dark:text-gray-300" href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
+
                 <div class="md:hidden">
-                    <button class="text-gray-800 dark:text-gray-200">
+                    <button id="mobile-toggle" class="text-gray-800 dark:text-gray-200">
                         <span class="material-icons">menu</span>
                     </button>
                 </div>
             </div>
         </header>
+    </div>
+    <script src="./scripts/load-header.js"></script>
         <main class="flex-grow">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
                 <div class="text-center max-w-3xl mx-auto">
@@ -145,7 +144,14 @@
             </div>
         </footer>
     </div>
+    <script>
+        const btn = document.getElementById("mobile-menu-button");
+        const menu = document.getElementById("mobile-menu");
 
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
